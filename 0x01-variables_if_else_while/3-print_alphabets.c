@@ -12,12 +12,12 @@ int main(void)
 	char ch = 'a';
 	char cu = 'A';
 
-while (ch = < 'z')
+	while (ch <= 'z')
 	{
 		putchar(ch);
 		ch++;
 	}
-while (cu = > 'Z')
+	while (cu <= 'Z')
 	{
 		putchar(cu);
 		cu++;
