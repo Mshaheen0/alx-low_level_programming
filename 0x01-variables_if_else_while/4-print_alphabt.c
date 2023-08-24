@@ -14,10 +14,10 @@ int main(void)
 	while (ch <= 'z')
 	{
 		if (ch == 'e')
-			continue;
+			ch++;
 		else
 			putchar(ch);
-		ch++;
+			ch++;
 	}
 	printf("\n");
 	return (0);
