@@ -20,6 +20,6 @@ int main(void)
 			printf("is positive");
 		else
 			printf("is negative");
-	pritnf("\n")
+	printf("\n");
 	return (0);
 }
