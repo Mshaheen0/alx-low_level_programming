@@ -9,12 +9,12 @@
  */
 int main(void)
 {
-	char ch = '0';
+	int x = (48);
 
-	while (ch <= '9')
+	while (x < (58))
 	{
-		putchar(ch);
-		ch++;
+		putchar(x);
+		x++;
 	}
 	printf("\n");
 	return (0);
