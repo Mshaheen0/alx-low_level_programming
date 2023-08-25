@@ -15,8 +15,8 @@ int main(void)
 		if (xx + '0' == '9')
 			break;
 		putchar(',');
-		putchar(' ');
 		xx++;
 	}
+	putchar(' ');
 	return (0);
 }
