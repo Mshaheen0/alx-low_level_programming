@@ -9,13 +9,14 @@
  */
 int main(void)
 {
-	int x = (48);
+	int x = 0;
 
-	/*while (x < (58))
-	{*/
-		putchar(x);
+	while (x < 10)
+	{
+		putchar(x + '0');
 		x++;
-	/*}*/
+		
+	}
 	printf("\n");
 	return (0);
 }
