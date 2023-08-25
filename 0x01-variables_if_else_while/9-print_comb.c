@@ -7,24 +7,24 @@
  */
 int main(void)
 {
-	int x = 0;
-	int y = 0;
+	int xx = 0;
+	int yy = 0;
 
-	while (x < 10)
+	while (xx < 10)
 	{
-		int y = 0;
+		int yy = 0;
 
-		while (y < 10)
+		while (yy < 10)
 		{
-			putchar(x + '0');
-			putchar(y + '0');
-			if (x + '0' == '9' && y + '0' == '9')
+			putchar(xx + '0');
+			putchar(yy + '0');
+			if (xx + '0' == '9' && yy + '0' == '9')
 				break;
 			putchar(',');
 			putchar(' ');
-			y++;
+			yy++;
 		}
-		x++;
+		xx++;
 	}
 	return (0);
 }
