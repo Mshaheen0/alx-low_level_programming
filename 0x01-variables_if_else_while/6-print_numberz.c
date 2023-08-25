@@ -11,11 +11,11 @@ int main(void)
 {
 	int x = (48);
 
-	//while (x < (58))
-	//{
+	/*while (x < (58))
+	{*/
 		putchar(x);
 		x++;
-	//}
+	/*}*/
 	printf("\n");
 	return (0);
 }
