@@ -9,7 +9,7 @@ int print_last_digit(int n)
 	int mod;
 
 	if (n < 0)
-		mod = -1 * (n % 10)
+		mod = -1 * (n % 10);
 	else
 		mod = n % 10;
 	_putchar(mod + '0');
