@@ -25,11 +25,11 @@ void times_table(void)
 			{
 				_putchar((n * a / 10) + '0');
 				_putchar(((n * a) % 10) + '0');
+				if (a == 9)
+					break;
+				_putchar(',');
+				_putchar(' ');
 			}
-			if (a == 9)
-				break;
-			_putchar(',');
-			_putchar(' ');
 		}
 		_putchar('\n');
 	}
