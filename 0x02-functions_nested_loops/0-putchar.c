@@ -1,11 +1,18 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
  * main - entry point
- * description:
- * return: always 0 (succesful)
+ * Description: a program that prints _putchar, followed by a new line.
+ * Return: always 0 (sucess)
  */
-int main (void)
+int main(void)
 {
-	printf("_putchar\n");
+	char str[] = "_putchar";
+	int ch;
+
+	for (ch = 0; ch < 8 ; ch++)
+		_putchar(str[ch]);
+	_putchar('\n');
 	return (0);
+
 }
