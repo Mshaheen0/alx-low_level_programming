@@ -48,7 +48,8 @@ int convert_day(int month, int day)
         default:
             break;
     }
-    if ((year % 4) == 0 && (year % 400) == 0 && (year % 100) != 0)
-	   d++;
+    if ((year % 4) == 0 || (year % 400 == 0 && year % 100 == 0))
+	    if (month == 2 && day >= 60)
+		    d++;
     return (day);
 }
