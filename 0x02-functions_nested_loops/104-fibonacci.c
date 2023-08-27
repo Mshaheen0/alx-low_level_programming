@@ -33,7 +33,7 @@ int main(void)
 	{
 		if (f1o > 0)
 			printf("%lu", f1o);
-		initial0s = numLength(max) - 1 - numLength(f1);
+		initial0s = numLength(mx) - 1 - numLength(f1);
 
 		while (f1o > 0 && initial0s > 0)
 		{
@@ -49,7 +49,7 @@ int main(void)
 		f1o = f2o;
 		f2o = sumo;
 
-		if (coun != 98)
+		if (count != 98)
 			printf(", ");
 		else
 			printf("\n");
