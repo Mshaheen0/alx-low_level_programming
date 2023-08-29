@@ -12,7 +12,7 @@ void print_most_numbers(void)
 	{
 		if (count == 2 || count == 4)
 		{
-			break;
+			continue;
 		}
 		else
 			_putchar(count + 48);
