@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	printf("The prime factors of 612852475143 are 3, 4019 and 50829599.\n");
+	printf("50829599.\n");
 	return (0);
 }
