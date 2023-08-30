@@ -10,6 +10,8 @@ int main(void)
 	long int n = 612852475143;
 	int i;
 
+	printf("The prime factors of %ld are ", n);
+
 	while (n % 2 == 0)
 	{
 		printf("%d, ", 2);
@@ -24,7 +26,7 @@ int main(void)
 		}
 	}
 	if (n > 2)
-		printf("%ld ", n);
+		printf("and %ld.", n);
 	printf("\n");
 	return (0);
 }
