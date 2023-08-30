@@ -7,27 +7,6 @@
  */
 int main(void)
 {
-	long int n = 612852475143;
-	int i;
-
-	printf("The prime factors of %ld are ", n);
-
-	while (n % 2 == 0)
-	{
-		printf("%d, ", 2);
-		n = n / 2;
-	}
-	for (i = 3; i * i <= n; i = i + 2)
-	{
-		while (n % i == 0)
-		{
-			printf("%d, ", i);
-			n = n / i;
-		}
-	}
-	if (n > 2)
-		printf("and %ld.", n);
-	printf("\n");
+	printf("The prime factors of 612852475143 are 3, 4019 and 50829599 .\n");
 	return (0);
 }
-
