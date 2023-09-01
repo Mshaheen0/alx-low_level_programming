@@ -17,11 +17,3 @@ int main(void)
 	return (0);
 }
 
-int _strlen(char *s)
-{
-	int len;
-
-	for (len = 0; len, *s != '\0'; s++)
-		len++;
-	return (len);
-}
