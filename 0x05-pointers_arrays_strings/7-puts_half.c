@@ -13,7 +13,7 @@ void puts_half(char *str)
 	{
 		int f2 = (len / 2);
 
-		while (f2 <= len)
+		while (f2 < len)
 		{
 			_putchar(str[f2]);
 			f2++;
@@ -23,7 +23,7 @@ void puts_half(char *str)
 	{
 		int odd_f2 = ((len - 1) / 2) + 1;
 
-		while (odd_f2 <= len)
+		while (odd_f2 < len)
 		{
 			_putchar(str[odd_f2]);
 			odd_f2++;
