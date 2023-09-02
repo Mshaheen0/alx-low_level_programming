@@ -9,14 +9,10 @@ void puts2(char *str)
 {
 	int sk;
 
-	for (sk = 0; *(str + sk) != '\0'; sk += 2)
+	for (sk = 0; str[sk] != '\0'; sk++)
 	{
-		if ((*(str + sk - 1)) == '\0')
-			break;
-		{
-			
-		}
-		_putchar(*(str + sk));
+		if (sk % 2 == 0)
+			_putchar(str[sk]);
 	}
 	_putchar('\n');
 }
