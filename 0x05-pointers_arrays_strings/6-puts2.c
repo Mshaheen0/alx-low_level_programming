@@ -11,7 +11,7 @@ void puts2(char *str)
 
 	for (sk = 0; *(str + sk) != '\0'; sk += 2)
 	{
-		if (*(str + sk - 1) = '\0')
+		if ((*(str + sk - 1)) == '\0')
 			break;
 		{
 			
