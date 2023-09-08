@@ -6,10 +6,10 @@
  */
 char *cap_string(char *str)
 {
-	int i = -1;
+	int i = 0;
 
-	do {
-		i++;
+	while (str[i])
+	{
 		if ((str[i - 1] == ' ') || (str[i - 1] == '	') ||
 				(str[i - 1] == '\n') || (str[i - 1] == ',') ||
 				(str[i - 1] == ';') || (str[i - 1] == '.') ||
@@ -21,6 +21,7 @@ char *cap_string(char *str)
 			if (str[i] >= 'a' && str[i] <= 'z')
 				str[i] = str[i] - 32;
 		}
-	} while (str[i]);
+		i++;
+	}
 	return (str);
 }
