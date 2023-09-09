@@ -7,7 +7,7 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, sum = 0, n = 0, u = 0;
+	unsigned int i, sum = 0, n = 0, u = 0, r;
 
 	while (s[u])
 		u++;
@@ -24,5 +24,6 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		n++;
 	}
-	return (u - sum);
+	r = u - sum;
+	return (r);
 }
