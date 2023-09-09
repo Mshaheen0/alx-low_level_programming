@@ -7,23 +7,17 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, sum = 0, n = 0, u = 0, r;
+	unsigned int i, j;
 
-	while (s[u])
-		u++;
-	while (s[n] != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		i = 0;
-		while (accept[i] != '\0')
+		for (j = 0; s[i] != accept[j]; j++)
 		{
-			if (s[n] == accept[i])
+			if ( accept[j] == '\0')
 			{
-				sum = sum + 1;
+				return (i);
 			}
-			i++;
 		}
-		n++;
 	}
-	r = u - sum;
-	return (r);
+	return (i);
 }
