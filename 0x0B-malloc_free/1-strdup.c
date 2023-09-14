@@ -15,11 +15,12 @@ char *_strdup(char *str)
 		return (NULL);
 	if (p == 0)
                 return (NULL);
-	if (p == NULL)
-		return (NULL);
-	for (i = 0; i < len; i++)
+	else
 	{
-		p[i] = str[i];
+		for (i = 0; i < len; i++)
+		{
+			p[i] = str[i];
+		}
 	}
 	return (p);
 }
