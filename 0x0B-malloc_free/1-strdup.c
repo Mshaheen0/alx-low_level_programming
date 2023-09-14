@@ -10,7 +10,7 @@ char *_strdup(char *str)
 	char *p;
 	int len = strlen(str), i;
 
-	p = malloc(len);
+	p = malloc(len + 1);
 	if (*str == '\0')
 		return (NULL);
 	if (p == NULL)
