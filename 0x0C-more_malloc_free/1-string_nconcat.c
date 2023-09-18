@@ -14,6 +14,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int len1, len2, res_len;
 	char *res;
 
+	if (s1 == NULL && s2 == NULL)
+	{
+		res = malloc(1);
+		res[0] = '\0';
+		return (res);
+	}
 	if (s1 == NULL)
 		len1 = 0;
 	else
